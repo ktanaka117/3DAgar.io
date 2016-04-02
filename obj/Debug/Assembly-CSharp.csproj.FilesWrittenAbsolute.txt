@@ -1,0 +1,17 @@
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/UnityEngine.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/UnityEditor.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Mono.Cecil.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Unity.DataContract.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/obj/Debug/Assembly-CSharp.dll
+/Users/tanakakenji/Dropbox/Development/Unity/3DAgar.io/obj/Debug/Assembly-CSharp.dll.mdb
