@@ -51,15 +51,18 @@ public class PlayerController : MonoBehaviour {
 
 	private void Divide() {
 		GameObject clone = Instantiate (playerClonePrefab, transform.position + transform.forward*2f, transform.localRotation) as GameObject;
-		clone.transform.localScale = gameObject.transform.localScale / 2;
+		// 複製時はオリジナルと同じサイズ
+		clone.transform.localScale = gameObject.transform.localScale;
 
+		// 複製後、オリジナルとクローンのScaleとMassを半分にする。クローンは移動速度も半分にする
 		ToHalfScale (clone);
 		ToHalfScale (gameObject);
-
+		
 		FireClone (clone);
 
 		shouldDivide = false;
 
+		// cloneにCameraは不要なので削除
 		DeleteCamera (clone);
 	}
 
@@ -71,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 		clone.GetComponent<Rigidbody> ().AddForce (transform.position + transform.forward*100f , ForceMode.Impulse);
 	}
 
-	void DeleteCamera(GameObject obj) {
+	private void DeleteCamera(GameObject obj) {
 		Camera camera = obj.transform.GetComponentInChildren<Camera> ();
 		if (camera != null) {
 			Destroy (camera.gameObject);
@@ -80,13 +83,21 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		assimilateOther (other);
+		Destroy (other.gameObject);
+
+		if (!scoreText) {
+			GameObject player = GameObject.Find ("Player");
+			player.GetComponent<PlayerController> ().score++;
+			player.GetComponent<PlayerController> ().scoreText.text = "Score: " + player.GetComponent<PlayerController> ().score;
+
+			return;
+		}
+
 		score++;
 		scoreText.text = "Score: " + score;
-
-		Destroy (other.gameObject);
 	}
 
-	void assimilateOther(Collider other) {
+	private void assimilateOther(Collider other) {
 		transform.localScale += other.transform.localScale;
 	}
 }
